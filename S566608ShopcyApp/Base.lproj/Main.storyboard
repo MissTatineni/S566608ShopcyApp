@@ -15,8 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1t3-0D-dsV" userLabel="LaunchLAV" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1t3-0D-dsV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="CmD-tU-70D"/>
+                            <constraint firstAttribute="bottom" secondItem="1t3-0D-dsV" secondAttribute="bottom" constant="34" id="HDm-NW-toP"/>
+                            <constraint firstAttribute="trailing" secondItem="1t3-0D-dsV" secondAttribute="trailing" id="aoP-xI-lZc"/>
+                            <constraint firstItem="1t3-0D-dsV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c1s-3X-urd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="DIi-AZ-3A0" kind="show" identifier="splashToLogin" id="vfg-tC-HHt"/>
@@ -42,6 +54,24 @@
             </objects>
             <point key="canvasLocation" x="829" y="14"/>
         </scene>
+        <!--Reset PasswordVC-->
+        <scene sceneID="APq-GH-Vdn">
+            <objects>
+                <viewController id="43v-0K-tYp" customClass="ResetPasswordVC" customModule="S566608ShopcyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cmX-B0-x70">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5TL-mi-Lt0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="DIi-AZ-3A0" kind="show" identifier="resetPasswordToLogin" id="7cV-3v-fFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06T-Ao-DDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="754"/>
+        </scene>
         <!--Create AccountVC-->
         <scene sceneID="ts7-lT-DsH">
             <objects>
@@ -62,7 +92,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5Uc-aD-J0d"/>
+        <segue reference="vfg-tC-HHt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -16,6 +16,11 @@
 		8CA714A42BBA75850089D061 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA714A32BBA75850089D061 /* SplashVC.swift */; };
 		8CA714A62BBA76270089D061 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA714A52BBA76270089D061 /* LoginVC.swift */; };
 		8CA714A82BBA76BF0089D061 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA714A72BBA76BF0089D061 /* CreateAccountVC.swift */; };
+		8CA714AA2BBA777D0089D061 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA714A92BBA777D0089D061 /* ResetPasswordVC.swift */; };
+		8CA714AE2BBA7EC40089D061 /* ProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA714AD2BBA7EC40089D061 /* ProductView.xib */; };
+		8CA714B12BBA86E80089D061 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8CA714B02BBA86E80089D061 /* Lottie */; };
+		8CA714B42BBA86EE0089D061 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8CA714B32BBA86EE0089D061 /* SDWebImage */; };
+		8CA714B62BBA86EE0089D061 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8CA714B52BBA86EE0089D061 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,8 @@
 		8CA714A32BBA75850089D061 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		8CA714A52BBA76270089D061 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8CA714A72BBA76BF0089D061 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		8CA714A92BBA777D0089D061 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
+		8CA714AD2BBA7EC40089D061 /* ProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA714B42BBA86EE0089D061 /* SDWebImage in Frameworks */,
+				8CA714B62BBA86EE0089D061 /* SDWebImageMapKit in Frameworks */,
+				8CA714B12BBA86E80089D061 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,8 @@
 				8C6325BD2BB9709600D8A757 /* SceneDelegate.swift */,
 				8C6325BF2BB9709600D8A757 /* ViewController.swift */,
 				8C6325C12BB9709600D8A757 /* Main.storyboard */,
+				8CA714AD2BBA7EC40089D061 /* ProductView.xib */,
+				8CA714A92BBA777D0089D061 /* ResetPasswordVC.swift */,
 				8CA714A72BBA76BF0089D061 /* CreateAccountVC.swift */,
 				8CA714A52BBA76270089D061 /* LoginVC.swift */,
 				8CA714A32BBA75850089D061 /* SplashVC.swift */,
@@ -92,6 +104,11 @@
 			dependencies = (
 			);
 			name = S566608ShopcyApp;
+			packageProductDependencies = (
+				8CA714B02BBA86E80089D061 /* Lottie */,
+				8CA714B32BBA86EE0089D061 /* SDWebImage */,
+				8CA714B52BBA86EE0089D061 /* SDWebImageMapKit */,
+			);
 			productName = S566608ShopcyApp;
 			productReference = 8C6325B82BB9709600D8A757 /* S566608ShopcyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +137,11 @@
 				Base,
 			);
 			mainGroup = 8C6325AF2BB9709600D8A757;
+			packageReferences = (
+				8CA714AF2BBA86E80089D061 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				8CA714B22BBA86EE0089D061 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				8CA714B72BBA8B730089D061 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8C6325B92BB9709600D8A757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA714AE2BBA7EC40089D061 /* ProductView.xib in Resources */,
 				8C6325C52BB9709700D8A757 /* Assets.xcassets in Resources */,
 				8C6325C82BB9709700D8A757 /* Base in Resources */,
 				8C6325C32BB9709600D8A757 /* Base in Resources */,
@@ -151,6 +174,7 @@
 				8CA714A42BBA75850089D061 /* SplashVC.swift in Sources */,
 				8CA714A82BBA76BF0089D061 /* CreateAccountVC.swift in Sources */,
 				8C6325BC2BB9709600D8A757 /* AppDelegate.swift in Sources */,
+				8CA714AA2BBA777D0089D061 /* ResetPasswordVC.swift in Sources */,
 				8C6325BE2BB9709600D8A757 /* SceneDelegate.swift in Sources */,
 				8CA714A62BBA76270089D061 /* LoginVC.swift in Sources */,
 			);
@@ -373,6 +397,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CA714AF2BBA86E80089D061 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+		8CA714B22BBA86EE0089D061 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
+		8CA714B72BBA8B730089D061 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CA714B02BBA86E80089D061 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CA714AF2BBA86E80089D061 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		8CA714B32BBA86EE0089D061 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CA714B22BBA86EE0089D061 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		8CA714B52BBA86EE0089D061 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CA714B22BBA86EE0089D061 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C6325B02BB9709600D8A757 /* Project object */;
 }
