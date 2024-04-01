@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,8 +46,78 @@
                     <view key="view" contentMode="scaleToFill" id="m7X-cu-fJ7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="57C-7C-XdU" userLabel="BigContainerSV">
+                                <rect key="frame" x="30" y="50" width="333" height="762"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfX-c6-99y" userLabel="LoginLAV" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="304.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-Xv-ebJ" userLabel="ActionsSV">
+                                        <rect key="frame" x="0.0" y="312.66666666666674" width="333" height="449.33333333333326"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU8-sG-VY1" userLabel="MessageLBL">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="68.333333333333329"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-3n-FcU" userLabel="UsernameTF">
+                                                <rect key="frame" x="0.0" y="76.333333333333314" width="333" height="68.333333333333314"/>
+                                                <color key="backgroundColor" red="0.80392156862745101" green="0.80784313725490198" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-ma-fLI" userLabel="PasswordTF">
+                                                <rect key="frame" x="0.0" y="152.66666666666669" width="333" height="68"/>
+                                                <color key="backgroundColor" red="0.80392156862745101" green="0.80784313725490198" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVA-Ih-d55" userLabel="LoginBTN">
+                                                <rect key="frame" x="0.0" y="228.66666666666671" width="333" height="68.333333333333343"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="capsule">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.43137254899999999" green="0.35294117650000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmY-a8-VFE">
+                                                <rect key="frame" x="0.0" y="304.99999999999994" width="333" height="68"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
+                                                    <color key="baseForegroundColor" red="0.43137254899999999" green="0.35294117650000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNs-px-hVb">
+                                                <rect key="frame" x="0.0" y="380.99999999999994" width="333" height="68.333333333333314"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Don't have an account? Signup">
+                                                    <color key="baseForegroundColor" red="0.43137254899999999" green="0.35294117650000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CfX-c6-99y" firstAttribute="width" secondItem="57C-7C-XdU" secondAttribute="width" multiplier="0.5" priority="750" id="2EL-RA-ee2"/>
+                                    <constraint firstItem="CfX-c6-99y" firstAttribute="height" secondItem="57C-7C-XdU" secondAttribute="height" multiplier="0.4" priority="750" id="QvH-5S-Q9f"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="95y-z8-nSF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="95y-z8-nSF" firstAttribute="trailing" secondItem="57C-7C-XdU" secondAttribute="trailing" constant="30" id="4y6-9s-RXw"/>
+                            <constraint firstItem="57C-7C-XdU" firstAttribute="top" secondItem="95y-z8-nSF" secondAttribute="top" constant="50" id="CtF-Yy-MWl"/>
+                            <constraint firstItem="57C-7C-XdU" firstAttribute="leading" secondItem="95y-z8-nSF" secondAttribute="leading" constant="30" id="l0Z-36-Vx5"/>
+                            <constraint firstItem="95y-z8-nSF" firstAttribute="bottom" secondItem="57C-7C-XdU" secondAttribute="bottom" constant="30" id="lKi-R6-O9q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1q9-j7-QZb"/>
                 </viewController>
